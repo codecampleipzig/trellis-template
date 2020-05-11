@@ -15,14 +15,13 @@
     ```sh
     $ composer install
     ```
-3. Create Readme File with a "Log"
-4. Configure Local Domain in `trellis/group_vars/development/wordpress_sites.yml` and add following
+3. Configure Local Domain in `trellis/group_vars/development/wordpress_sites.yml` and add following
     ```
     site_title: Example
     admin_user: example
     ```
-5. Configure Local Domain in `trellis/group_vars/development/vault.yml`
-6. Vagrant Up:
+4. Configure Local Domain in `trellis/group_vars/development/vault.yml`
+5. Vagrant Up:
     ```sh
     $ cd ../trellis && vagrant up
     ```
@@ -32,16 +31,17 @@
     $ vagrant hostmanager
     ```
     For NFS Catalina fix edit '/etc/exports' and add '/System/Volumes/Data/'
-7. Vagrant SSH:
+6. Vagrant SSH:
     ```sh
     $ vagrant ssh
     $ sh /srv/www/example.com/current/scripts/wp-reset-options.sh
-8. Deploy with [Bedrock Deployer](https://github.com/mmoollllee/bedrock-deployer):
+7. Deploy with [Bedrock Deployer](https://github.com/mmoollllee/bedrock-deployer):
     1. Create GitHub Repo
     2. Setup Plesk Environment (bin/bash, add SSH-Key)
     3. SSH into Webserver, create SSH key and add pub key to [GitHub Repo Deploy Keys](https://github.com/mmoollllee/site-template/settings/keys)
     ```sh
     $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    ```
     4. Edit deploy.php
     5. Change Admin PW
     6. Run
