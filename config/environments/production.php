@@ -10,7 +10,6 @@ define('DISABLED_PLUGINS', serialize([
 ]));
 
 define('ENABLED_PLUGINS', serialize([
-    'wp-scss/wp-scss.php',
     'autoptimize/autoptimize.php',
     'wp-super-cache/wp-cache.php',
     'google-sitemap-generator/sitemap.php',

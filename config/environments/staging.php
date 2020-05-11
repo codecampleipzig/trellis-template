@@ -25,7 +25,6 @@ define('DISABLED_PLUGINS', serialize([
 ]));
 
 define('ENABLED_PLUGINS', serialize([
-    'wp-scss/wp-scss.php',
     'autoptimize/autoptimize.php',
     'simple-history/index.php',
     'wp-super-cache/wp-cache.php'
