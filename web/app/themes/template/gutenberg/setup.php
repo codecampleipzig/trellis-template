@@ -2,6 +2,11 @@
 
 add_action( 'init',
    function () {
+
+      /**
+       * Register Produkte Posttype
+      */
+
       $labels = array(
          "name" => __( 'Produkte', "mg" ),
          "singular_name" => __( 'Produkt', "mg" ),
@@ -24,6 +29,11 @@ add_action( 'init',
       );
 
       register_post_type( 'produkte', $args );
+
+
+      /**
+       * Register Dienstleistungen Posttype
+      */
 
       $labels = array(
          "name" => __( 'Dienstleistungen', "mg" ),

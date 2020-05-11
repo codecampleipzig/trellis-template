@@ -19,6 +19,4 @@
 </section>
 <?php endwhile; ?>
 
-<?php builder(); ?>
-
 <?php get_footer();

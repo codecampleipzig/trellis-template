@@ -1,8 +1,9 @@
 <?php
 
-require_once('builder/builder.php');
-require_once('builder/acf.php');
 
+/**
+ * Autoload template's functions folder
+ */
 
   function autoload( $path ) {
       $items = glob( $path . DIRECTORY_SEPARATOR . "*" );
@@ -18,9 +19,11 @@ require_once('builder/acf.php');
   }
 autoload( dirname( __FILE__ ) . DIRECTORY_SEPARATOR . "functions" );
 
-// Setup Post-Types
+
+/**
+ * Setup Post-Types
+ */
 
 require_once('gutenberg/setup.php');
 require_once('gutenberg-vimeo/setup.php');
 require_once('termine/setup.php');
-require_once('slider/acf.php');

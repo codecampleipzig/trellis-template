@@ -45,6 +45,3 @@
 
 	<main>
 		<div id="main" class="anchor"></div>
-
-		<?php if ( function_exists( 'breadcrumb_trail') && !is_home() && !is_front_page() && ( $post->post_parent > 0 || is_single() ) ) breadcrumb_trail( array( 'before' => false, 'show_browse' => false, 'labels' => array( 'error_404' => 'Fehler 404', 'paged' => 'Seite %s') ) ); ?>
-		</div>

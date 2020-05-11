@@ -1,9 +1,0 @@
-jconfirm.defaults = {
-  backgroundDismiss: true,
-  closeIcon: true,
-  closeAnimation: 'opacity',
-  animationSpeed: 600,
-  escapeKey: true,
-  theme: 'modern',
-  bgOpacity: 0,
-}
